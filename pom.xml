@@ -14,6 +14,7 @@
     <modules>
         <module>biz-user</module>
         <module>feign-user</module>
+        <module>gateway-user</module>
     </modules>
 
 
