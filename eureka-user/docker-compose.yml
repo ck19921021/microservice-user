@@ -3,7 +3,7 @@ version: '2.0'
 services:
 
   eureka-user-one:
-    image: registry.cn-qingdao.aliyuncs.com/woaipaifang-product/eureka-server:1.0.1.RELEASES
+    image: registry.cn-qingdao.aliyuncs.com/woaipaifang-product/eureka-user:1.0.1.RELEASES
     restart: always
     container_name: eureka-user-9990
     volumes:
