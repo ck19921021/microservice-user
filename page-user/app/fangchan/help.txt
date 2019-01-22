@@ -1,0 +1,50 @@
+Aliplayer
+首页
+帮助文档
+在线配置
+功能展示
+诊断工具
+2.7.4
+ HTML5 Flash
+基础配置更多配置皮肤自定义播放预览代码
+  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+<title>Aliplayer在线配置</title>
+<link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/2.7.4/skins/default/aliplayer-min.css" />
+<script type="text/javascript" charset="utf-8" src="//g.alicdn.com/de/prismplayer/2.7.4/aliplayer-min.js"></script>
+</head>
+<body>
+<div class="prism-player" id="player-con"></div>
+<script>
+var player = new Aliplayer({
+  "id": "player-con",
+  "source": "//player.alicdn.com/video/aliyunmedia.mp4",
+  "width": "100%",
+  "height": "500px",
+  "autoplay": true,
+  "isLive": false,
+  "rePlay": false,
+  "playsinline": true,
+  "preload": true,
+  "controlBarVisibility": "hover",
+  "useH5Prism": true
+}, function (player) {
+    console.log("播放器创建了。");
+  }
+);
+</script>
+</body>
+帮助文档
+快速入门
+发布历史
+在线配置
+阿里云
+视频直播
+视频点播
+媒体转码
+Copyright © 2018 Aliyun Inc.

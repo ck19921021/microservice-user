@@ -1,0 +1,14 @@
+{
+  "name": "test1",
+  "scripts": {
+    "dev": "nuxt",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "nuxt": "^2.3.4"
+  },
+  "devDependencies": {
+    "vue-lazyload": "^1.2.6"
+  }
+}

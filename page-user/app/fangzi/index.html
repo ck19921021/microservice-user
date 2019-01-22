@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>lol账号交易网(lolzhanghao.com)</title>
+		<meta name="description" content="lol账号交易网致力于打造便捷、可靠的多元化、多方式的在线lol账号交易平台" />
+		<meta name="keyword" content="lol账号、lol账户、lol帐号、lol帐户、lol艾欧尼亚、lol比尔吉沃特、lol祖安、lol交易" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="../commonjs/vue.min.js"></script>
+		<script src="../commonjs/vue-resource.min.js"></script>
+		<script src="../commonjs/axios.min.js"></script>
+		<script src="../commonjs/qs.min.js"></script>
+		<script src="../commonjs/mui.min.js"></script>
+		<script src="fangzi.js"></script>
+		<script src="index.js"></script>
+
+		<link rel="stylesheet" href="../commoncss/mui.min.css" />
+		<link rel="stylesheet" href="index.css" />
+
+		<body>
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+				<h1 class="mui-title">房屋列表</h1>
+			</header>
+			<!--<span v-if="sites.data.length===0" class="norecord">未查询到记录
+				</span>-->
+			<div id="app">
+
+				<span v-if="sites.data">
+				<span v-if="sites.data.length===0" class="norecord">未查询到记录
+				</span>
+				<span v-else>
+					<div class="mui-content">
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li v-for="item in sites.data" class="mui-table-view-cell">
+								<table>
+									<p class="item"><img style="border-radius:25px;width:30%;height:20%;" v-bind:src="item.imageUrl" /></p>
+									<p class="item">标题：<span style="color:#101d37;">{{item.title}}</span></p>
+									<p class="item">房子ID：{{item.id}}</p>
+									<p class="item">户型：{{item.hx}}</p>
+									<p class="item">面积：{{item.mj}}</p>
+									<p class="item">价格：<span style="color:#e16422;">{{item.price}}</span></p>
+									<p class="item">标签：{{item.tag}}</p>
+									<p class="item">创建时间：{{ item.createTime }}</p>
+									<p class="item">更新时间：{{ item.lastUpdateTime }}</p>
+									<p class="item">房子uuid：{{item.uuid}}</p>
+								</table>
+							</li>
+						</ul>
+			</div>
+
+			<div class="mui-content-padded">
+				<ul class="mui-pagination mui-pagination-sm" style="cursor: pointer;">
+					<li v-if="page>1">
+						<a v-on:click="page--,pageClick()">上一页</a>
+					</li>
+					<li v-if="page==1" v-bind:class="{ 'mui-previous mui-disabled': page == 1}">
+						<a>上一页</a>
+					</li>
+					<li v-for="index in indexs" v-bind:class="{ 'mui-active': page == index}">
+						<a v-on:click="btnClick(index)">{{ index }}</a>
+					</li>
+					<li v-if="page!=totalPage">
+						<a v-on:click="page++,pageClick()">下一页</a>
+					</li>
+					<li v-if="page == totalPage" v-bind:class="{ 'mui-previous mui-disabled': page == totalPage}">
+						<a>下一页</a>
+					</li>
+					<li>
+						<a>共<i>{{totalPage}}</i>页</a>
+					</li>
+				</ul>
+			</div>
+			</span>
+			</span>
+			</div>
+		</body>
+
+</html>

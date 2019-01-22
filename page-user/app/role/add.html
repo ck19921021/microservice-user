@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>lol账号交易网(lolzhanghao.com)</title>
+		<meta name="description" content="lol账号交易网致力于打造便捷、可靠的多元化、多方式的在线lol账号交易平台" />
+		<meta name="keyword" content="lol账号、lol账户、lol帐号、lol帐户、lol艾欧尼亚、lol比尔吉沃特、lol祖安、lol交易" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<script src="../commonjs/vue.min.js"></script>
+		<script src="../commonjs/vue-validator.js"></script>
+		<script src="../commonjs/axios.min.js"></script>
+		<script src="../commonjs/qs.min.js"></script>
+		<script src="../commonjs/mui.min.js"></script>
+		<script src="index.js"></script>
+		<script src="role.js"></script>
+
+		<link rel="stylesheet" href="../commoncss/mui.min.css" />
+		<link rel="stylesheet" href="index.css" />
+
+		<body>
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+				<h1 class="mui-title">新增角色</h1>
+			</header>
+			<div id="app">
+				<div class="mui-content" style="margin-left:2px; padding-top: 15px;">
+					<div class="mui-content-padded">
+						<validator @valid="onValid" name="myForm">
+							<form class="mui-input-group" @submit.prevent="submitForm">
+
+								<div class="mui-input-row">
+									<label>角色名称:</label>
+									<input v-model="name" :minlength='3' :maxlength='30' type="text" placeholder="输入角色名称" />
+								</div>
+
+								<div class="mui-button-row">
+									<button class="mui-btn mui-btn-blue mui-btn-outlined" type="submit">提交</button>
+								</div>
+
+							</form>
+						</validator>
+					</div>
+				</div>
+			</div>
+		</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script src="https://unpkg.com/vue@1.0.26/dist/vue.min.js"></script>
+	<script src="https://cdn.bootcss.com/vue-validator/2.1.3/vue-validator.js"></script>
+
+	<body>
+		<div id="app">
+			<validator name="validation1">
+				<div class="username">
+					<label for="username">username:</label>
+					<input id="username" type="text" v-validate:username="{
+      required: { rule: true, message: 'required you name !!' }
+    }">
+					<span v-if="$validation1.username.required">{{ $validation1.username.required }}</span>
+				</div>
+				<div class="password">
+					<label for="password">password:</label>
+					<input id="password" type="password" v-validate:password="{
+      required: { rule: true, message: 'required you password !!' },
+      minlength: { rule: 8, message: 'your password short too !!' }
+    }" />
+					<span v-if="$validation1.password.required">{{ $validation1.password.required }}</span>
+					<span v-if="$validation1.password.minlength">{{ $validation1.password.minlength }}</span>
+				</div>
+			</validator>
+		</div>
+		<script type="text/javascript">
+			new Vue({
+				el: '#app'
+			});
+		</script>
+	</body>
+
+</html>
