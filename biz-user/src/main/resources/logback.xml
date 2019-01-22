@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- if debug set to true, context info always print otherwise the contex 
+	info will print when error occour -->
+<configuration>
+	<property name="USER_HOME" value="/app/logs/logback" />
+
+	<!-- 控制台输出日志 -->
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	<!-- 文件输出日志 -->
+	<appender name="fileLog"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${USER_HOME}/logs/%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{40} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	<!-- 全局日志级别配置 -->
+	<root level="error">
+		<appender-ref ref="stdout" />
+	</root>
+	
+	<!-- <logger name="org.springframework.data.mongodb" level="DEBUG" additivity="false">
+		<appender-ref ref="stdout" />
+	</logger> -->
+
+	<logger name="com.woaipaifang" level="DEBUG" additivity="false">
+		<appender-ref ref="stdout" />
+		<appender-ref ref="fileLog" />
+	</logger>
+</configuration>
