@@ -8,5 +8,7 @@ sudo firewall-cmd --zone=public --add-port=9990/tcp --add-port=9999/tcp --perman
 
 3...
 local.eureka.user.lolzhanghao.com:9990
+local.eureka.user.lolzhanghao.com:9999
+
 
 
