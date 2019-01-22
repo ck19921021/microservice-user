@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>feign-user</name>
-	<description>用户客户端请求</description>
+	<description>用户客户端请求1</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
