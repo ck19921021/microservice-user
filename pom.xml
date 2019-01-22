@@ -16,6 +16,7 @@
         <module>feign-user</module>
         <module>gateway-user</module>
         <module>config-user</module>
+        <module>eureka-user</module>
     </modules>
 
 

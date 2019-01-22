@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.woaipaifang</groupId>
+    <artifactId>eureka-user</artifactId>
+    <version>1.0.1.RELEASES</version>
+    <packaging>jar</packaging>
+    <name>eureka-user</name>
+    <description>用户服务注册</description>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.2.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <docker.repository>registry.cn-qingdao.aliyuncs.com</docker.repository>
+        <docker.registry.name>woaipaifang-product</docker.registry.name>
+        <docker-maven-plugin.version>1.0.0</docker-maven-plugin.version>
+        <baseImage.version>registry.cn-qingdao.aliyuncs.com/woaipaifang-management/openjdk:8</baseImage.version>
+        <spring-boot-maven-plugin.version>1.5.4.RELEASE</spring-boot-maven-plugin.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-security</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Camden.SR6</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <name>maven-releases</name>
+            <url>http://local.nexus.lolzhanghao.com:8083/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <name>maven-snapshots</name>
+            <url>http://local.nexus.lolzhanghao.com:8083/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot-maven-plugin.version}</version>
+            </plugin>
+
+            <!--docker maven插件 -->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>${docker-maven-plugin.version}</version>
+                <!--docker镜像相关的配置信息 -->
+                <configuration>
+                    <dockerHost>https://192.168.99.100:2376</dockerHost>
+                    <dockerCertPath>C:\Users\Administrator\.docker\machine\machines\default</dockerCertPath>
+                    <!--镜像名，这里用工程名 -->
+                    <imageName>${docker.repository}/${docker.registry.name}/${project.artifactId}:${project.version}
+                    </imageName>
+                    <forceTags>true</forceTags>
+                    <!--TAG,这里用工程版本号 -->
+                    <imageTags>
+                        <imageTag>${project.version}</imageTag>
+                    </imageTags>
+                    <!-- <dockerDirectory>src/main/docker</dockerDirectory> -->
+                    <!--镜像的FROM，使用java官方镜像 -->
+                    <baseImage>${baseImage.version}</baseImage>
+                    <maintainer>ck 2464017733@qq.com</maintainer>
+                    <workdir>/ROOT</workdir>
+                    <!-- 该镜像的容器启动后，直接运行spring boot工程 -->
+                    <entryPoint>["java","-jar", "/${project.build.finalName}.jar"]</entryPoint>
+                    <!--构建镜像的配置信息 -->
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <Directory>${project.build.directory}</Directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                    <serverId>docker-aliyun</serverId>
+                    <registryUrl>${docker.repository}</registryUrl>
+                    <pushImage>true</pushImage>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
