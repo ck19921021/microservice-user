@@ -24,5 +24,3 @@ services:
       - /microservice-user/eureka-user/conf/default.conf:/etc/nginx/conf.d/default.conf:ro
     ports:
       - 9999:9999
-    entrypoint: java -jar -Dserver.port=9990 /eureka-user-1.0.1.RELEASES.jar
-  
