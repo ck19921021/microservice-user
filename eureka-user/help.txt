@@ -1,0 +1,6 @@
+1...
+rm -rf /microservice-user && cd / && git clone https://github.com/ck19921021/microservice-user.git && cd /microservice-user/eureka-user && dos2unix /microservice-user/eureka-user/*.sh && chmod -R 777 /microservice-user/eureka-user/
+/microservice-user/eureka-user/stop.sh
+/microservice-user/eureka-user/start.sh
+
+sudo firewall-cmd --zone=public --add-port=8186/tcp --permanent && sudo firewall-cmd --reload
