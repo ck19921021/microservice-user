@@ -3,4 +3,4 @@ rm -rf /microservice-user && cd / && git clone https://github.com/ck19921021/mic
 /microservice-user/eureka-user/stop.sh
 /microservice-user/eureka-user/start.sh
 
-sudo firewall-cmd --zone=public --add-port=8186/tcp --permanent && sudo firewall-cmd --reload
+sudo firewall-cmd --zone=public --add-port=9990/tcp --permanent && sudo firewall-cmd --reload
