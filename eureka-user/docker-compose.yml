@@ -3,7 +3,7 @@ version: '2.0'
 services:
 
   eureka-user-9990:
-    image: registry.cn-qingdao.aliyuncs.com/woaipaifang-product/eureka-user:1.0.2.RELEASES
+    image: registry.cn-qingdao.aliyuncs.com/woaipaifang-product/eureka-user:1.0.3.RELEASES
     restart: always
     container_name: eureka-user-9990
     volumes:
@@ -11,7 +11,7 @@ services:
       - /etc/timezone:/etc/timezone:ro
     ports:
       - 9990:9990
-    entrypoint: java -jar -Dserver.port=9990 /eureka-user-1.0.2.RELEASES.jar
+    entrypoint: java -jar -Dserver.port=9990 /eureka-user-1.0.3.RELEASES.jar
 
   nginx-eureka-user-9999:
     image: registry.cn-qingdao.aliyuncs.com/woaipaifang-management/nginx:1.5.8
