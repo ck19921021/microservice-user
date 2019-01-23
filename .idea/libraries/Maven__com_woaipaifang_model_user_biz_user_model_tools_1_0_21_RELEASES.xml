@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.woaipaifang.model.user:biz-user-model:tools:1.0.21.RELEASES">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/woaipaifang/model/user/biz-user-model/1.0.21.RELEASES/biz-user-model-1.0.21.RELEASES-tools.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/woaipaifang/model/user/biz-user-model/1.0.21.RELEASES/biz-user-model-1.0.21.RELEASES-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/woaipaifang/model/user/biz-user-model/1.0.21.RELEASES/biz-user-model-1.0.21.RELEASES-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

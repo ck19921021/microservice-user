@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="biz-account" />
+        <module name="biz-audit" />
+        <module name="biz-comment" />
+        <module name="biz-coupon" />
+        <module name="biz-distribution" />
+        <module name="biz-inventory" />
+        <module name="biz-member" />
+        <module name="biz-merchant" />
+        <module name="biz-order" />
+        <module name="biz-payment" />
+        <module name="biz-product-recommend" />
+        <module name="biz-score" />
+        <module name="biz-signin" />
+        <module name="biz-signup" />
+        <module name="biz-user" />
+        <module name="biz-user-model" />
+        <module name="common-core" />
+        <module name="config-account" />
+        <module name="config-audit" />
+        <module name="config-comment" />
+        <module name="config-coupon" />
+        <module name="config-distribution" />
+        <module name="config-inventory" />
+        <module name="config-member" />
+        <module name="config-merchant" />
+        <module name="config-order" />
+        <module name="config-payment" />
+        <module name="config-product" />
+        <module name="config-product-recommend" />
+        <module name="config-score" />
+        <module name="config-signin" />
+        <module name="config-signup" />
+        <module name="config-user" />
+        <module name="eureka-account" />
+        <module name="eureka-audit" />
+        <module name="eureka-comment" />
+        <module name="eureka-coupon" />
+        <module name="eureka-distribution" />
+        <module name="eureka-inventory" />
+        <module name="eureka-member" />
+        <module name="eureka-merchant" />
+        <module name="eureka-order" />
+        <module name="eureka-payment" />
+        <module name="eureka-product-recommend" />
+        <module name="eureka-score" />
+        <module name="eureka-signin" />
+        <module name="eureka-signup" />
+        <module name="eureka-user" />
+        <module name="feign-account" />
+        <module name="feign-audit" />
+        <module name="feign-comment" />
+        <module name="feign-coupon" />
+        <module name="feign-distribution" />
+        <module name="feign-inventory" />
+        <module name="feign-member" />
+        <module name="feign-merchant" />
+        <module name="feign-order" />
+        <module name="feign-payment" />
+        <module name="feign-product-recommend" />
+        <module name="feign-score" />
+        <module name="feign-signin" />
+        <module name="feign-signup" />
+        <module name="feign-user" />
+        <module name="gateway-account" />
+        <module name="gateway-audit" />
+        <module name="gateway-comment" />
+        <module name="gateway-coupon" />
+        <module name="gateway-distribution" />
+        <module name="gateway-inventory" />
+        <module name="gateway-member" />
+        <module name="gateway-merchant" />
+        <module name="gateway-order" />
+        <module name="gateway-payment" />
+        <module name="gateway-product-recommend" />
+        <module name="gateway-score" />
+        <module name="gateway-signin" />
+        <module name="gateway-signup" />
+        <module name="gateway-user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="biz-account" target="1.5" />
+      <module name="biz-audit" target="1.5" />
+      <module name="biz-comment" target="1.5" />
+      <module name="biz-coupon" target="1.5" />
+      <module name="biz-distribution" target="1.5" />
+      <module name="biz-inventory" target="1.5" />
+      <module name="biz-member" target="1.5" />
+      <module name="biz-merchant" target="1.5" />
+      <module name="biz-order" target="1.5" />
+      <module name="biz-payment" target="1.5" />
+      <module name="biz-product" target="1.5" />
+      <module name="biz-product-recommend" target="1.5" />
+      <module name="biz-score" target="1.5" />
+      <module name="biz-score (1)" target="1.5" />
+      <module name="biz-signin" target="1.5" />
+      <module name="biz-signup" target="1.5" />
+      <module name="biz-user" target="1.5" />
+      <module name="biz-user-model" target="1.5" />
+      <module name="common-core" target="1.8" />
+      <module name="config-account" target="1.8" />
+      <module name="config-audit" target="1.8" />
+      <module name="config-comment" target="1.8" />
+      <module name="config-coupon" target="1.8" />
+      <module name="config-distribution" target="1.8" />
+      <module name="config-finance" target="1.8" />
+      <module name="config-inventory" target="1.8" />
+      <module name="config-member" target="1.8" />
+      <module name="config-merchant" target="1.8" />
+      <module name="config-order" target="1.8" />
+      <module name="config-payment" target="1.8" />
+      <module name="config-product" target="1.8" />
+      <module name="config-product-recommend" target="1.8" />
+      <module name="config-score" target="1.8" />
+      <module name="config-signin" target="1.8" />
+      <module name="config-signup" target="1.8" />
+      <module name="config-user" target="1.8" />
+      <module name="eureka-account" target="1.8" />
+      <module name="eureka-audit" target="1.8" />
+      <module name="eureka-comment" target="1.8" />
+      <module name="eureka-coupon" target="1.8" />
+      <module name="eureka-distribution" target="1.8" />
+      <module name="eureka-finance" target="1.8" />
+      <module name="eureka-inventory" target="1.8" />
+      <module name="eureka-member" target="1.8" />
+      <module name="eureka-merchant" target="1.8" />
+      <module name="eureka-order" target="1.8" />
+      <module name="eureka-payment" target="1.8" />
+      <module name="eureka-product" target="1.8" />
+      <module name="eureka-product-recommend" target="1.8" />
+      <module name="eureka-score" target="1.8" />
+      <module name="eureka-signin" target="1.8" />
+      <module name="eureka-signup" target="1.8" />
+      <module name="eureka-user" target="1.8" />
+      <module name="feign-account" target="1.8" />
+      <module name="feign-audit" target="1.8" />
+      <module name="feign-comment" target="1.8" />
+      <module name="feign-coupon" target="1.8" />
+      <module name="feign-distribution" target="1.8" />
+      <module name="feign-finance" target="1.8" />
+      <module name="feign-inventory" target="1.8" />
+      <module name="feign-member" target="1.8" />
+      <module name="feign-merchant" target="1.8" />
+      <module name="feign-order" target="1.8" />
+      <module name="feign-payment" target="1.8" />
+      <module name="feign-product" target="1.8" />
+      <module name="feign-product-recommend" target="1.8" />
+      <module name="feign-score" target="1.8" />
+      <module name="feign-signin" target="1.8" />
+      <module name="feign-signup" target="1.8" />
+      <module name="feign-user" target="1.8" />
+      <module name="gateway-account" target="1.8" />
+      <module name="gateway-audit" target="1.8" />
+      <module name="gateway-comment" target="1.8" />
+      <module name="gateway-coupon" target="1.8" />
+      <module name="gateway-distribution" target="1.8" />
+      <module name="gateway-finance" target="1.8" />
+      <module name="gateway-inventory" target="1.8" />
+      <module name="gateway-member" target="1.8" />
+      <module name="gateway-merchant" target="1.8" />
+      <module name="gateway-order" target="1.8" />
+      <module name="gateway-payment" target="1.8" />
+      <module name="gateway-product" target="1.8" />
+      <module name="gateway-product-recommend" target="1.8" />
+      <module name="gateway-score" target="1.8" />
+      <module name="gateway-signin" target="1.8" />
+      <module name="gateway-signup" target="1.8" />
+      <module name="gateway-user" target="1.8" />
+      <module name="microservice-account" target="1.5" />
+      <module name="microservice-ad" target="1.5" />
+      <module name="microservice-admin" target="1.5" />
+      <module name="microservice-audit" target="1.5" />
+      <module name="microservice-comment" target="1.5" />
+      <module name="microservice-coupon" target="1.5" />
+      <module name="microservice-credit" target="1.5" />
+      <module name="microservice-distribution" target="1.5" />
+      <module name="microservice-finance" target="1.5" />
+      <module name="microservice-inventory" target="1.5" />
+      <module name="microservice-member" target="1.5" />
+      <module name="microservice-merchant" target="1.5" />
+      <module name="microservice-order" target="1.5" />
+      <module name="microservice-payment" target="1.5" />
+      <module name="microservice-product" target="1.5" />
+      <module name="microservice-product-recommend" target="1.5" />
+      <module name="microservice-score" target="1.5" />
+      <module name="microservice-signin" target="1.5" />
+      <module name="microservice-signup" target="1.5" />
+      <module name="microservice-user" target="1.5" />
+      <module name="microservice-user (1)" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

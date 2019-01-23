@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-product/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-audit/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-account/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-comment/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-order/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-payment/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-score/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-credit/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-ad/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-product-recommend/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-signin/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-signup/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-coupon/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-merchant/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-member/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-distribution/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-inventory/pom.xml" />
+        <option value="$PROJECT_DIR$/../biz/biz-user-model/pom.xml" />
+        <option value="$PROJECT_DIR$/../common-core/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-finance/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../microservice-finance/biz-finance/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-finance/config-finance/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-finance/eureka-finance/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-finance/feign-finance/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-finance/gateway-finance/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-product/biz-product/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-product/eureka-product/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-product/feign-product/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-product/gateway-product/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

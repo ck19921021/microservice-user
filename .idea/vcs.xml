@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-account" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-ad" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-admin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-audit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-comment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-coupon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-credit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-distribution" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-finance" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-inventory" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-member" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-merchant" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-order" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-payment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-product" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-product-recommend" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-score" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-signin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../microservice-signup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+</project>
