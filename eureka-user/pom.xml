@@ -5,7 +5,7 @@
 
     <groupId>com.woaipaifang</groupId>
     <artifactId>eureka-user</artifactId>
-    <version>1.0.3.RELEASES</version>
+    <version>1.0.1.RELEASES</version>
     <packaging>jar</packaging>
     <name>eureka-user</name>
     <description>用户服务注册</description>
