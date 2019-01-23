@@ -4,7 +4,7 @@ services:
 
   eureka-user-9990:
     image: registry.cn-qingdao.aliyuncs.com/woaipaifang-product/eureka-user:1.0.3.RELEASES
-    restart: always
+#    restart: always
     container_name: eureka-user-9990
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -15,7 +15,7 @@ services:
 
   nginx-eureka-user-9999:
     image: registry.cn-qingdao.aliyuncs.com/woaipaifang-management/nginx:1.5.8
-    restart: always
+#    restart: always
     container_name: nginx-eureka-user-9999
     volumes:
       - /etc/localtime:/etc/localtime:ro
